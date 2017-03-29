@@ -20,22 +20,34 @@ block content
         .row.input-spacing
           .col-xs-2
           .col-xs-4
-            label(for="cities") Select a city:
-            br
-            input#city(type="text", list="json-cities", placeholder="e.g. Glasgow")
-            datalist#json-cities
-          .col-xs-4
-            label(for="category") Select a category:
-            br
-            textarea#category(name="textarea" rows="6")
-        .row.input-spacing
-          .col-xs-2
-          .col-xs-4
+            //- label(for="cities") Select a city:
+            //- br
+            //- input#city(type="text", list="json-cities", placeholder="e.g. Glasgow")
+            //- datalist#json-cities
             label Crawl mode:
             br
             label#crawlmode.switch
               input(type="checkbox", checked="checked")
               div.slider.round
+          .col-xs-4
+            //- label(for="category") Select a category:
+            //- br
+            //- textarea#category(name="textarea" rows="6")
+            label(for="cities") Select a city:
+            br
+            input#city(type="text", list="json-cities", placeholder="e.g. Glasgow")
+            datalist#json-cities
+        .row.input-spacing 
+          .col-xs-4
+          .col-xs-8
+            //- label Crawl mode:
+            //- br 
+            //- label#crawlmode.switch
+            //-   input(type="checkbox", checked="checked")
+            //-   div.slider.round
+            //- label(for="category") Select a category:
+            //- br
+            //- textarea#category(name="textarea" rows="6")
         .row.input-spacing
           .col-xs-4
           .col-xs-6
