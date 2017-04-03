@@ -393,13 +393,14 @@ $(document).ready(function() {
             if(!lines[lines.length - 1]) {
                 $this.attr('rows', rows - 1);
             }
-            if($('#category').val('')){
-              $this.attr('rows',1);
-            }
         }
     });
     //reset row on click
     $('button[type=reset]').on('click',function(){
       $('#category').attr('rows',1);
+    });
+    //clear alerts from div#alert-area
+    $('#clr-alert').click(function(){
+      $('#alert-area').empty();
     });
 });
